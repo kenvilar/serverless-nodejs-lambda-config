@@ -20,4 +20,8 @@ sls logs --function kenVilarFunction
 sls deploy function --function kenVilarFunction
 #this will output "This is a test only"
 sls invoke --function kenVilarFunction
+
+#since we've changed the configuration in the serverless.yml
+sls deploy
+curl <amazonaws-link-dev-app>
 ```
