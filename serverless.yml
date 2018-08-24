@@ -8,3 +8,7 @@ provider:
 functions:
   kenVilarFunction:
     handler: handler.run
+    events:
+      - http:
+        path: /
+        method: get
