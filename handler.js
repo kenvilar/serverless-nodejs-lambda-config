@@ -1,3 +1,4 @@
 module.exports.run = (event, context, callback) => {
-  callback(null, "This is a test only")
+  console.log("This is a debug statement");
+  callback(null, "This is a test only");
 }
