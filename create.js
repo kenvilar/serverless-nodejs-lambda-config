@@ -1,4 +1,5 @@
 const AWS = require("aws-sdk");
+const uuid = require("uuid/v4");
 const client = new AWS.DynamoDB.DocumentClient();
 
 module.exports.run = async (event) => {
@@ -6,7 +7,7 @@ module.exports.run = async (event) => {
   const params = {
     TableName: "todos",
     Item: {
-      id: "abc",
+      id: uuid(),
       text: data.text,
       checked: false,
     }
