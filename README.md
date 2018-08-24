@@ -25,3 +25,7 @@ sls invoke --function kenVilarFunction
 sls deploy
 curl <amazonaws-link-dev-app>
 ```
+
+```
+npm install --save uuid
+```
