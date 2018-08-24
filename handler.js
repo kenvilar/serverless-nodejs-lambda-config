@@ -10,5 +10,10 @@
 
 //Since node 8 support async wait
 module.exports.run = async (event) => {
-  return "This is a test only";
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      message: "This is a test only"
+    })
+  };
 }
