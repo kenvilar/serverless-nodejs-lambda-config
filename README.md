@@ -34,3 +34,12 @@ npm install --save uuid
 ```curl
 curl -X POST <amazonaws-link-dev-app>/todos --data '{"text": "My name is Ken Vilar"}'
 ```
+
+## To retrieve data
+```curl 
+curl <amazonaws-link-dev-app>/todos/<your-existing-uuid>
+```
+## To retrieve data with debug log (handy)
+```
+sls invoke --function getTodo --log --data '{"pathParameters": {"id": "<your-existing-uuid>"}}'
+```
