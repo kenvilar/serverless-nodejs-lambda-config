@@ -29,3 +29,8 @@ curl <amazonaws-link-dev-app>
 ```
 npm install --save uuid
 ```
+
+## To store data
+```curl
+curl -X POST <amazonaws-link-dev-app>/todos --data '{"text": "My name is Ken Vilar"}'
+```
