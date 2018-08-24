@@ -6,5 +6,5 @@ provider:
   runtime: nodejs8.10
   
 functions:
-  helloWorld:
+  kenVilarFunction:
     handler: handler.run
