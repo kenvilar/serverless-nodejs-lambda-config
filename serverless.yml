@@ -4,7 +4,7 @@ service: my-app
 provider: 
   name: aws
   runtime: nodejs8.10
-  iAmRoleStatements: 
+  iamRoleStatements: 
     - Effect: Allow
       Action: 
         - dynamodb:PutItem
@@ -22,8 +22,8 @@ functions:
     handler: create.run
     events:
       - http:
-        path: todos
-        method: post
+          path: todos
+          method: post
 
 resources:
   Resources:
