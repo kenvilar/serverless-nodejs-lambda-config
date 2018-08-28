@@ -12,6 +12,12 @@ provider:
       Resource: "arn:aws:dynamodb:us-east-1:<series-of-numbers>:table/todos"
   
 functions:
+  kenVilarFunction:
+    handler: handler.run
+    events:
+      - http:
+          path: /
+          method: get
   getTodo: 
     handler: get.run
     events:
