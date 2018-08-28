@@ -5,11 +5,11 @@ module.exports.run = async (event) => {
   const params = {
     TableName: "todos",
     Key: {
-      id: event.PathParameters.id
+      id: event.pathParameters.id
     }
   };
   
-  const result = await dynamoDb.get(params).promise;
+  const result = await dynamoDb.get(params).promise();
   
   if (result.Item) {
     return {
